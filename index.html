@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flooble</title>
+
+    <!-- font awesom -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav class="top-nav-bar hidden">
+            <div class="left-nav">
+                <a href="#">About</a>
+                <a href="#">Store</a>
+            </div>
+
+            <div class="right-nav">
+                <a href="#">FlooMail</a>
+                <a href="#">Images</a>
+                <a href="#">
+                    <i class="fas fa-ellipsis-v"></i>
+                    <i class="fas fa-ellipsis-v"></i>
+                    <i class="fas fa-ellipsis-v"></i>
+                </a>
+                <a href="#">
+                    <img src="images/img-1.jpg" alt="">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="main">
+        <h1>F<span>L</span>OO<span>B</span>LE</h1>
+        <form>
+            <input type="text">
+            <i class="fas fa-search"></i>
+            <img src="images/google-mic.png" alt="">
+            <input type="button" value="Flooble Search">
+            <input type="button" value="Its My Lucky Day">
+        </form>
+    </div>
+
+    <!-- footer section starts -->
+    <footer class="footer">
+        <nav>
+            <div class="left-nav">
+                <a href="">Advertising</a>
+                <a href="">Business</a>
+            </div>
+
+            <div class="right-nav">
+                <a href="">Privacy</a>
+                <a href="">Terms</a>
+                <a href="">Settings</a>
+            </div>
+        </nav>
+    </footer>
+
+
+    <!-- javsascript -->
+    <script>
+        let menu = document.querySelector(".menu");
+        let navBar = document.querySelector(".top-nav-bar");
+
+        menu.addEventListener("click", function () {
+            navBar.classList.toggle("hidden");
+        });
+    </script>
+</body>
+
+</html>
